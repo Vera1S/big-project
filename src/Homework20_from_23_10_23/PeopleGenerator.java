@@ -1,11 +1,9 @@
-package Homework1_from_16_08_23;
+package Homework20_from_23_10_23;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.List;
-
-import static java.util.stream.Collectors.toList;
 
 public class PeopleGenerator {
     public static void main(String[] args) throws FileNotFoundException {

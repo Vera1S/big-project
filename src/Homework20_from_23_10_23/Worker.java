@@ -1,6 +1,5 @@
-package Homework1_from_16_08_23;
+package Homework20_from_23_10_23;
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class Worker extends Person implements AbleToCalculatePension {
