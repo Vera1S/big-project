@@ -46,9 +46,6 @@ public class PeopleGenerator {
             String generatedMale = nameMale + " " + minSalary + " " + maxSalary;
             bufferedWriterNameMale.write(generatedMale);
 
-//            int nameR
-            //String[] peoples = nameFemale.spl
-
 
         }
     }

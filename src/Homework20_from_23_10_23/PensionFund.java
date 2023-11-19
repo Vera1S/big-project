@@ -5,27 +5,34 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
+
 public class PensionFund {
 
-    private String pensFundName;
-    public boolean gos;
+    private String namePensionFund;
+    public boolean isGos;
     private String dateOfCreation;
     private List<Worker> persons;
 
     private Map<DayOfWeek, Boolean> workDays;
 
-    public PensionFund(String pensFundName, String dateOfCreation, boolean gos, List<Worker> persons) {
-        this.pensFundName = pensFundName;
-        this.gos = gos;
+    public PensionFund(String namePensionFund, String dateOfCreation, boolean isGos, List<Worker> persons) {
+        this.namePensionFund = namePensionFund;
+        this.isGos = isGos;
         this.dateOfCreation = dateOfCreation;
         this.persons = persons;
         this.workDays = new HashMap<>();
+    }
+    public PensionFund(String strPension){
+        String[] arrayPensionFund = strPension.split(", ");
+        this.namePensionFund = arrayPensionFund[0];
+        this.isGos = Boolean.parseBoolean(arrayPensionFund[1]);
+        this.dateOfCreation = arrayPensionFund[2];
+        this.persons = arrayPensionFund[3];
 
     }
 
     public void infoState() {
-        System.out.println("Наименование фонда: " + pensFundName);
+        System.out.println("Наименование фонда: " + namePensionFund);
         // 1 вариант
 //        if (persons == null){
 //            return;
@@ -39,7 +46,7 @@ public class PensionFund {
         // 3 вариант
 //        int count = (persons != null) ? persons.size() : 0;
 //        }
-        if (gos) {
+        if (isGos) {
             System.out.println("Государственный фонд: " + count / 1000 + " тысяч человек используют фонд");
         } else {
             System.out.println("Негосударственный фонд: " + count + " человек используют фонд");
@@ -51,7 +58,7 @@ public class PensionFund {
         if (obj == null) {
             return 0.0;
         }
-        if (gos && isWorkDayToday() || workDays == null) {
+        if (isGos && isWorkDayToday() || workDays == null) {
             // Государственный фонд, используем метод calculatePension() объекта
             return obj.calculatePension() * 0.8;
         } else {
@@ -86,12 +93,12 @@ public class PensionFund {
         return sum / persons.size();
     }
 
-    public String getPensFundName() {
-        return pensFundName;
+    public String getNamePensionFund() {
+        return namePensionFund;
     }
 
     public boolean isGos() {
-        return gos;
+        return isGos;
     }
 
     public String getDateOfCreation() {
@@ -99,7 +106,7 @@ public class PensionFund {
     }
 
     public void setGos(boolean gos) {
-        this.gos = gos;
+        this.isGos = gos;
     }
 
     public List<Worker> getPersons() {
@@ -118,41 +125,7 @@ public class PensionFund {
         this.workDays = workDays;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
 
-        PensionFund that = (PensionFund) o;
-
-        if (gos != that.gos) return false;
-        if (!Objects.equals(pensFundName, that.pensFundName)) return false;
-        if (!Objects.equals(dateOfCreation, that.dateOfCreation))
-            return false;
-        if (!Objects.equals(persons, that.persons)) return false;
-        return Objects.equals(workDays, that.workDays);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = pensFundName != null ? pensFundName.hashCode() : 0;
-        result = 31 * result + (gos ? 1 : 0);
-        result = 31 * result + (dateOfCreation != null ? dateOfCreation.hashCode() : 0);
-        result = 31 * result + (persons != null ? persons.hashCode() : 0);
-        result = 31 * result + (workDays != null ? workDays.hashCode() : 0);
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "PensionFund{" +
-                "pensFundName='" + pensFundName + '\'' +
-                ", gos=" + gos +
-                ", dateOfCreation='" + dateOfCreation + '\'' +
-                ", persons=" + persons +
-                ", workDays=" + workDays +
-                '}';
-    }
 }
 
 
