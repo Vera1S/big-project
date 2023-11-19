@@ -12,7 +12,7 @@ public class PeopleGenerator {
         File nameFemale = new File("src/Files/nameFemale.txt");
         File nameMale = new File("src/Files/nameMale.txt");
         File pensionFund = new File("src/Files/PensionFund.txt");
-        File generatorFemale = new File("src/src/Files/generatorFemale.txt");
+        File generatorFemale = new File("src/Files/generatorFemale.txt");
         File generatorMale = new File("src/Files/generatorMale.txt");
 
         FileReader fileReaderForNameFemale = new FileReader(nameFemale);
@@ -42,11 +42,11 @@ public class PeopleGenerator {
             int minSalary = random.nextInt(550, 1000);
             int maxSalary = random.nextInt(1100, 6000);
 
-            String generatedFemale = nameFemale + " " + minSalary + " " + maxSalary;
+            String generatedFemale = nameFemales.get(random.nextInt(0, 100)) + " " + minSalary + " " + maxSalary + " " + GenderTypes.FEMALE;
             bufferedWriterNameFemale.write(generatedFemale);
             bufferedWriterNameFemale.newLine();
 
-            String generatedMale = nameMale + " " + minSalary + " " + maxSalary;
+            String generatedMale = nameMales.get(random.nextInt(0, 100)) + " " + minSalary + " " + maxSalary + GenderTypes.MALE + " " + GenderTypes.MALE;
             bufferedWriterNameMale.write(generatedMale);
             bufferedWriterNameMale.newLine();
 
