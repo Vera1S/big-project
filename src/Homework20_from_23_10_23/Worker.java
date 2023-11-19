@@ -1,5 +1,6 @@
 package Homework20_from_23_10_23;
 
+import java.util.Objects;
 import java.util.Set;
 
 public class Worker extends Person implements AbleToCalculatePension {
@@ -10,14 +11,23 @@ public class Worker extends Person implements AbleToCalculatePension {
     private int minSalary;
     private int maxSalary;
     private Set<ProfessionsType> professionsTypes;
+    private String nameFemale;
+    private String nameMale;
+
 
     public Worker(String name, int age, double height, double weight, int money) {
         super(name, age, height, weight, money);
     }
-//    public Worker(String nameFemale, String nameMale, int )
-    public Worker(String str){
-        String[] arraySplit = str.split(" ");
-        //super.s
+    public Worker(String nameFemale, String nameMale){
+        this.nameFemale = nameFemale;
+        this.nameMale = nameMale;
+    }
+    public Worker(String strSplit){
+        String[] arraypersonSplit = strSplit.split(" ");
+        this.nameFemale = arraypersonSplit[0];
+        this.nameMale = arraypersonSplit[1];
+        this.minSalary = Integer.parseInt(arraypersonSplit[2]);
+        this.maxSalary = Integer.parseInt(arraypersonSplit[3]);
     }
 
     public Worker(int minSalary) {
@@ -77,7 +87,23 @@ public class Worker extends Person implements AbleToCalculatePension {
     }
 
     public static double getCoefficientToProfession() {
+
         return COEFFICIENT_TO_PROFESSION;
+    }
+    public String getNameFemale() {
+        return nameFemale;
+    }
+
+    public void setNameFemale(String nameFemale) {
+        this.nameFemale = nameFemale;
+    }
+
+    public String getNameMale() {
+        return nameMale;
+    }
+
+    public void setNameMale(String nameMale) {
+        this.nameMale = nameMale;
     }
 
     public static void setCoefficientToProfession(double coefficientToProfession) {
@@ -112,7 +138,11 @@ public class Worker extends Person implements AbleToCalculatePension {
         Worker worker = (Worker) o;
 
         if (minSalary != worker.minSalary) return false;
-        return maxSalary == worker.maxSalary;
+        if (maxSalary != worker.maxSalary) return false;
+        if (!Objects.equals(professionsTypes, worker.professionsTypes))
+            return false;
+        if (!Objects.equals(nameFemale, worker.nameFemale)) return false;
+        return Objects.equals(nameMale, worker.nameMale);
     }
 
     @Override
@@ -120,6 +150,9 @@ public class Worker extends Person implements AbleToCalculatePension {
         int result = super.hashCode();
         result = 31 * result + minSalary;
         result = 31 * result + maxSalary;
+        result = 31 * result + (professionsTypes != null ? professionsTypes.hashCode() : 0);
+        result = 31 * result + (nameFemale != null ? nameFemale.hashCode() : 0);
+        result = 31 * result + (nameMale != null ? nameMale.hashCode() : 0);
         return result;
     }
 
@@ -128,6 +161,9 @@ public class Worker extends Person implements AbleToCalculatePension {
         return "Worker{" +
                 "minSalary=" + minSalary +
                 ", maxSalary=" + maxSalary +
+                ", professionsTypes=" + professionsTypes +
+                ", nameFemale='" + nameFemale + '\'' +
+                ", nameMale='" + nameMale + '\'' +
                 '}';
     }
 }
