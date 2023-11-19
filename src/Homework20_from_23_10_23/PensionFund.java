@@ -23,7 +23,7 @@ public class PensionFund {
         this.workDays = new HashMap<>();
     }
     public PensionFund(String strPension){
-        String[] arrayPensionFund = strPension.split(", ");
+        String[] arrayPensionFund = strPension.split(" ");
         this.namePensionFund = arrayPensionFund[0];
         this.isGos = Boolean.parseBoolean(arrayPensionFund[1]);
         this.dateOfCreation = arrayPensionFund[2];
