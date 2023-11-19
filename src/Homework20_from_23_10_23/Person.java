@@ -44,6 +44,10 @@ public abstract class Person {
         return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public double getHeight() {
         return height;
     }
@@ -61,7 +65,6 @@ public abstract class Person {
     }
 
     public GenderTypes getIsGender() {
-
         return isGender;
     }
 

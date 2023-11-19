@@ -26,8 +26,9 @@ public class Worker extends Person implements AbleToCalculatePension {
         String[] arraypersonSplit = strSplit.split(" ");
         this.nameFemale = arraypersonSplit[0];
         this.nameMale = arraypersonSplit[1];
-        this.minSalary = Integer.parseInt(arraypersonSplit[2]);
-        this.maxSalary = Integer.parseInt(arraypersonSplit[3]);
+        this.a
+        this.minSalary = Integer.parseInt(arraypersonSplit[3]);
+        this.maxSalary = Integer.parseInt(arraypersonSplit[4]);
     }
 
     public Worker(int minSalary) {
