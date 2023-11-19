@@ -1,6 +1,7 @@
 package Homework20_from_23_10_23;
 
 import java.util.Objects;
+import java.util.Random;
 import java.util.Set;
 
 public class Worker extends Person implements AbleToCalculatePension {
@@ -23,10 +24,11 @@ public class Worker extends Person implements AbleToCalculatePension {
         this.nameMale = nameMale;
     }
     public Worker(String strSplit){
+        Random ran = new Random();
         String[] arraypersonSplit = strSplit.split(" ");
         this.nameFemale = arraypersonSplit[0];
         this.nameMale = arraypersonSplit[1];
-        this.a
+        this.setAge(ran.nextInt(18, 65));
         this.minSalary = Integer.parseInt(arraypersonSplit[3]);
         this.maxSalary = Integer.parseInt(arraypersonSplit[4]);
     }
