@@ -14,9 +14,10 @@ public class Worker extends Person implements AbleToCalculatePension {
     public Worker(String name, int age, double height, double weight, int money) {
         super(name, age, height, weight, money);
     }
+//    public Worker(String nameFemale, String nameMale, int )
     public Worker(String str){
         String[] arraySplit = str.split(" ");
-        super.s
+        //super.s
     }
 
     public Worker(int minSalary) {
