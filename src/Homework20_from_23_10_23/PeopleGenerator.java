@@ -9,11 +9,11 @@ public class PeopleGenerator {
 
         Random random = new Random();
 
-        File nameFemale = new File("nameFemale.txt");
-        File nameMale = new File("nameMale.txt");
-        File pensionFund = new File("PensionFund.txt");
-        File generatorFemale = new File("generatorFemale.txt");
-        File generatorMale = new File("generatorMale.txt");
+        File nameFemale = new File("Files/nameFemale.txt");
+        File nameMale = new File("Files/nameMale.txt");
+        File pensionFund = new File("Files/PensionFund.txt");
+        File generatorFemale = new File("Files/generatorFemale.txt");
+        File generatorMale = new File("Files/generatorMale.txt");
 
         FileReader fileReaderForNameFemale = new FileReader(nameFemale);
         FileReader fileReaderForNameMale = new FileReader(nameMale);
