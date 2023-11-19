@@ -21,11 +21,10 @@ public abstract class Person {
         this.weight = weight;
         this.money = money;
     }
-    public Person(String nameFemale, String nameMale, int age){
+    public Person(String nameFemale, String nameMale){
         this.nameFemale = nameFemale;
         this.nameMale = nameMale;
-        this.age = age;
-    }
+            }
 
     public Person() {
     }
@@ -33,8 +32,7 @@ public abstract class Person {
         String[] arraypersonSplit = strSplit.split(" ");
         this.nameFemale = arraypersonSplit[0];
         this.nameMale = arraypersonSplit[1];
-        this.age = Integer.parseInt(arraypersonSplit[2]);
-     }
+             }
 
     public void infoOfPerson() {
         System.out.println("Имя: " + name + ", Возраст: " + age + " лет" + ", Рост: " + height + " см" + ", Вес: " + weight + " кг");

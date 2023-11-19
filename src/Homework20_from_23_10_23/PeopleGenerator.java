@@ -40,8 +40,14 @@ public class PeopleGenerator {
             int minSalary = random.nextInt(550, 1000);
             int maxSalary = random.nextInt(1100, 6000);
 
+            String generatedFemale = nameFemale + " " + minSalary + " " + maxSalary;
+            bufferedWriterNameFemale.write(generatedFemale);
+
+            String generatedMale = nameMale + " " + minSalary + " " + maxSalary;
+            bufferedWriterNameMale.write(generatedMale);
+
 //            int nameR
-//            String[] peoples =
+            //String[] peoples = nameFemale.spl
 
 
         }
