@@ -27,8 +27,7 @@ public class PensionFund {
         this.namePensionFund = arrayPensionFund[0];
         this.isGos = Boolean.parseBoolean(arrayPensionFund[1]);
         this.dateOfCreation = arrayPensionFund[2];
-        this.persons = arrayPensionFund[3];
-
+//        this.persons = arrayPensionFund[3];
     }
 
     public void infoState() {

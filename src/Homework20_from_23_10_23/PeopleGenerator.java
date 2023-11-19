@@ -12,20 +12,22 @@ public class PeopleGenerator {
         File nameFemale = new File("nameFemale.txt");
         File nameMale = new File("nameMale.txt");
         File pensionFund = new File("PensionFund.txt");
+        File generatorFemale = new File("generatorFemale.txt");
+        File generatorMale = new File("generatorMale.txt");
 
         FileReader fileReaderForNameFemale = new FileReader(nameFemale);
         FileReader fileReaderForNameMale = new FileReader(nameMale);
         FileReader fileReaderForPensionFund = new FileReader(pensionFund);
-        FileWriter fileWriterNameFemale = new FileWriter(nameFemale);
-        FileWriter fileWriterNameMale = new FileWriter(nameMale);
-        FileWriter fileWriterPensionFund = new FileWriter(pensionFund);
+        FileWriter fileWriterNameFemale = new FileWriter(generatorFemale);
+        FileWriter fileWriterNameMale = new FileWriter(generatorMale);
+        //FileWriter fileWriterPensionFund = new FileWriter(pensionFund);
 
         BufferedReader bufferedReaderNameFemale = new BufferedReader(fileReaderForNameFemale);
         BufferedReader bufferedReaderNameMale = new BufferedReader(fileReaderForNameMale);
         BufferedReader bufferedReaderPensionFund = new BufferedReader(fileReaderForPensionFund);
         BufferedWriter bufferedWriterNameFemale = new BufferedWriter(fileWriterNameFemale);
         BufferedWriter bufferedWriterNameMale = new BufferedWriter(fileWriterNameMale);
-        BufferedWriter bufferedWriterPensionFund = new BufferedWriter(fileWriterPensionFund);
+        //BufferedWriter bufferedWriterPensionFund = new BufferedWriter(fileWriterPensionFund);
 
         List<String> nameFemales = bufferedReaderNameFemale.lines()
                 .toList();
@@ -42,10 +44,11 @@ public class PeopleGenerator {
 
             String generatedFemale = nameFemale + " " + minSalary + " " + maxSalary;
             bufferedWriterNameFemale.write(generatedFemale);
+            bufferedWriterNameFemale.newLine();
 
             String generatedMale = nameMale + " " + minSalary + " " + maxSalary;
             bufferedWriterNameMale.write(generatedMale);
-
+            bufferedWriterNameMale.newLine();
 
         }
     }
