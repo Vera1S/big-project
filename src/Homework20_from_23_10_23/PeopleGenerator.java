@@ -1,24 +1,42 @@
 package Homework20_from_23_10_23;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+
+import java.io.*;
 import java.util.List;
+import java.util.Random;
 
 public class PeopleGenerator {
-    public static void main(String[] args) throws FileNotFoundException {
-        File firstFile = new File("name_Female.txt");
-        File secondFile = new File("nameMale.txt");
-        File tirdFile = new File("PensionFund.txt");
+    public static void main(String[] args) throws IOException {
 
-        FileReader fileReaderNameFemale = new FileReader(firstFile);
-        FileReader fileReaderNameMale = new FileReader(secondFile);
-        FileReader fileReaderPensionFund = new FileReader(tirdFile);
+        Random random = new Random();
 
-        BufferedReader bufferedReader = new BufferedReader(fileReaderNameFemale);
+        File nameFemale = new File("name_Female.txt");
+        File nameMale = new File("nameMale.txt");
+        File pensionFund = new File("PensionFund.txt");
+
+        FileReader fileReaderNameFemale = new FileReader(nameFemale);
+        FileReader fileReaderNameMale = new FileReader(nameMale);
+        FileReader fileReaderPensionFund = new FileReader(pensionFund);
+        FileWriter fileWriterNameFemale = new FileWriter(nameFemale);
+        FileWriter fileWriterNameMale = new FileWriter(nameMale);
+        FileWriter fileWriterPensionFund = new FileWriter(pensionFund);
+
+        BufferedReader bufferedReaderNameFemale = new BufferedReader(fileReaderNameFemale);
         BufferedReader bufferedReaderNameMale = new BufferedReader(fileReaderNameMale);
         BufferedReader bufferedReaderPensionFund = new BufferedReader(fileReaderPensionFund);
-        List<String> people = bufferedReader.lines()
+        BufferedWriter bufferedWriterNameFemale = new BufferedWriter(fileWriterNameFemale);
+        BufferedWriter bufferedWriterNameMale = new BufferedWriter(fileWriterNameMale);
+        BufferedWriter bufferedWriterPensionFund = new BufferedWriter(fileWriterPensionFund);
+
+        List<String> nameFemales = bufferedReaderNameFemale.lines()
                 .toList();
+        List<String> nameMales = bufferedReaderNameMale.lines()
+                .toList();
+
+        for (int i = 0; i < 10000; i++) {
+            int minSalary = random.nextInt(550, 1000);
+            int maxSalary = random.nextInt(1100, 6000);
+            String[]
+
+        }
     }
 }
