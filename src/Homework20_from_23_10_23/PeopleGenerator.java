@@ -11,23 +11,23 @@ public class PeopleGenerator {
 
         File nameFemale = new File("src/Files/nameFemale.txt");
         File nameMale = new File("src/Files/nameMale.txt");
-        File pensionFund = new File("src/Files/PensionFund.txt");
+
         File generatorFemale = new File("src/Files/generatorFemale.txt");
         File generatorMale = new File("src/Files/generatorMale.txt");
 
         FileReader fileReaderForNameFemale = new FileReader(nameFemale);
         FileReader fileReaderForNameMale = new FileReader(nameMale);
-        FileReader fileReaderForPensionFund = new FileReader(pensionFund);
+
         FileWriter fileWriterNameFemale = new FileWriter(generatorFemale);
         FileWriter fileWriterNameMale = new FileWriter(generatorMale);
-        //FileWriter fileWriterPensionFund = new FileWriter(pensionFund);
+
 
         BufferedReader bufferedReaderNameFemale = new BufferedReader(fileReaderForNameFemale);
         BufferedReader bufferedReaderNameMale = new BufferedReader(fileReaderForNameMale);
-        BufferedReader bufferedReaderPensionFund = new BufferedReader(fileReaderForPensionFund);
+
         BufferedWriter bufferedWriterNameFemale = new BufferedWriter(fileWriterNameFemale);
         BufferedWriter bufferedWriterNameMale = new BufferedWriter(fileWriterNameMale);
-        //BufferedWriter bufferedWriterPensionFund = new BufferedWriter(fileWriterPensionFund);
+
 
         List<String> nameFemales = bufferedReaderNameFemale.lines()
                 .toList();
