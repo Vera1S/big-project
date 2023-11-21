@@ -10,7 +10,7 @@ public class GeneratorPensionFund {
 
         File pensionFund = new File("src/Files/PensionFund.txt");
 
-        File generatorPensionFund = new File("src/Files/generatorPensionFund");
+        File generatorPensionFund = new File("src/Files/generatorPensionFund.txt");
 
         FileReader fileReaderForPensionFund = new FileReader(pensionFund);
         FileWriter fileWriterPensionFund = new FileWriter(generatorPensionFund);
@@ -25,7 +25,7 @@ public class GeneratorPensionFund {
 
         for (int i = 0; i < 100; i++){
             boolean isGos = random.nextBoolean();
-            int nameRandomPensionFund = random.nextInt(0, 10);
+            int nameRandomPensionFund = random.nextInt(0, 100);
 
             String generatorPensionFunds = pensionFunds.get(random.nextInt(0, 86)) + " " + nameRandomPensionFund + " " + isGos;
             bufferedWriterPensionFund.write(generatorPensionFunds);

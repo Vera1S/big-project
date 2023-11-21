@@ -33,7 +33,6 @@ public class Worker extends Person implements AbleToCalculatePension {
         this.maxSalary = Integer.parseInt(arraypersonSplit[4]);
         this.setIsGender(arraypersonSplit[5].equals("MALE") ? GenderTypes.FEMALE : GenderTypes.MALE);
     }
-
     public Worker(int minSalary) {
         super();
         this.minSalary = minSalary;
