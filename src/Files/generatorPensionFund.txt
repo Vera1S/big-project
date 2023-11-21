@@ -1,0 +1,100 @@
+Elliott Management 4, false
+California Public Employees' Retirement System (CalPERS) 21, true
+BlackRock Fund Advisors 27, true
+Davidson Kempner Capital Management 53, true
+CalSTRS 43, false
+Государственные служащие Южной Каролины 28, true
+Alberta Investment Management 11, true
+Fire and Police Pension Association of Colorado (FPPA) 51, true
+Davidson Kempner Capital Management 32, true
+California Public Employees' Retirement System (CalPERS) 66, true
+Retail Employees Superannuation Trust 87, true
+Ontario Teachers' Pension Plan 78, true
+STRS Огайо 97, false
+CalSTRS 16, false
+Пенсионная система учителей Техаса 44, true
+Stichting Pensioenfonds ABP 73, true
+Государственные школы Пенсильвании 11, true
+Пенсионная система Вирджинии 70, false
+BlackRock Financial Management 64, false
+PGGM 52, true
+Minnesota Teachers' Retirement Association (MNTRA) 46, false
+Elliott Management 0, false
+Retail Employees Superannuation Trust 1, true
+Retirement Systems of Alabama 64, true
+Kansas Public Employees Retirement System (KPERS) 23, true
+Fire and Police Pension Association of Colorado (FPPA) 88, true
+All Weather 21, false
+California Public Employees' Retirement System (CalPERS) 44, false
+California Public Employees' Retirement System (CalPERS) 28, true
+Инвестиционное управление Нью-Джерси 24, true
+Ontario Pension Board (OPB) 7, false
+New York State Teachers' Retirement System (NYSTRS) 33, true
+CPP Investment Board 91, false
+Ontario Teachers' Pension Plan 93, true
+Mandatory Provident Fund 70, true
+Учителя штата Нью-Йорк 39, true
+Учителя штата Нью-Йорк 76, false
+Optimal Portfolio 25, true
+Caisse de dépôt et placement du Québec 80, true
+Massachusetts PRIM 2, true
+Illinois Municipal Retirement Fund 15, true
+Государственные служащие штата Невада 33, false
+PFZW 51, false
+Public Sector Pension Investment Board (PSP Investments) 5, true
+BlackRock Fund Advisors 52, false
+Пенсионный фонд Нью-Йорка 56, false
+SBA Флориды 88, false
+Caisse de dépôt et placement du Québec 25, true
+Alberta Investment Management 51, true
+Millennium Management 1, true
+Minnesota Public Employees' Retirement Association (MNPERA) 33, false
+Caisse de dépôt et placement du Québec 18, true
+SBA Флориды 35, true
+Государственные служащие штата Орегон 12, false
+Учителя Иллинойса 97, false
+Васелек 0, true
+Caisse de dépôt et placement du Québec 70, false
+Teacher Retirement System of Texas (TRS of Texas) 96, false
+Пенсионный фонд Мичигана 14, false
+Minnesota Teachers' Retirement Association (MNTRA) 13, true
+California Public Employees' Retirement System (CalPERS) 46, true
+Пенсионная система учителей Техаса 16, false
+Государственные служащие штата Невада 83, true
+PFZW 52, true
+CalPERS 31, true
+Stichting Pensioenfonds Zorg en Welzijn 58, false
+CPP Investment Board 16, false
+Государственные служащие штата Орегон 4, true
+Пенсионный фонд Мичигана 69, true
+Stichting Pensioenfonds ABP (ABP) 30, true
+Stichting Pensioenfonds ABP 99, true
+Two Sigma Investments 39, false
+Caisse de dépôt et placement du Québec 93, false
+Caisse de dépôt et placement du Québec 49, false
+Округ Лос-Анджелес 85, false
+BlackRock Fund Advisors 66, false
+Совет по инвестициям штата Миннесота 4, false
+Mandatory Provident Fund 27, false
+Fire and Police Pension Association of Colorado (FPPA) 22, false
+Chile pension system 14, true
+BlackRock Financial Management 37, false
+New York State Teachers' Retirement System (NYSTRS) 55, true
+Two Sigma Investments 62, true
+Alberta Investment Management 46, true
+Государственная школа Миссури 37, false
+BlackRock Financial Management 45, false
+Ontario Pension Board (OPB) 65, false
+Alberta Investment Management 32, false
+Инвестиционное управление Нью-Джерси 97, true
+Canada Pension Plan 74, true
+Healthcare of Ontario Pension Plan (HOOPP) 70, false
+Государственные служащие штата Орегон 90, true
+Two Sigma Investments 20, true
+Пенсионный фонд штата Пенсильвания 32, false
+Alberta Investment Management 37, true
+Citadel Advisors 73, false
+Учителя Джорджии 26, false
+Ontario Teachers' Pension Plan (контролируемый профсоюзом) 69, true
+Renaissance Technologies 79, false
+Пенсионная система Вирджинии 53, true

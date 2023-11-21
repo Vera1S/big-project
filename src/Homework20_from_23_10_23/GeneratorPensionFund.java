@@ -27,9 +27,10 @@ public class GeneratorPensionFund {
             boolean isGos = random.nextBoolean();
             int nameRandomPensionFund = random.nextInt(0, 100);
 
-            String generatorPensionFunds = pensionFunds.get(random.nextInt(0, 86)) + " " + nameRandomPensionFund + " " + isGos;
+            String generatorPensionFunds = pensionFunds.get(random.nextInt(0, 86)) + " " + nameRandomPensionFund + ", " + isGos;
             bufferedWriterPensionFund.write(generatorPensionFunds);
             bufferedWriterPensionFund.newLine();
+            bufferedWriterPensionFund.flush();
         }
     }
 
