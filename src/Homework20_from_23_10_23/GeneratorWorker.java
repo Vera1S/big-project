@@ -11,8 +11,8 @@ public class GeneratorWorker {
         List<Worker> generatorWorker = new ArrayList<>();
         Random random = new Random();
 
-        FileReader fileReaderWorkerFemale = new FileReader((File) generatorWorker);
-        FileReader fileReaderWorkerMale = new FileReader("src/Files/generatorMale.txt");
+        FileReader fileReaderWorkerFemale = new FileReader(generatorFemale);
+        FileReader fileReaderWorkerMale = new FileReader(generatorMale);
 
         FileWriter fileWriterWorkerFemale = new FileWriter(generatorWorkerFemale);
         FileWriter fileWriterWorkerMale = new FileWriter(generatorWorkerMale);
