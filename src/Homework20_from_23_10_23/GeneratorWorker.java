@@ -11,14 +11,8 @@ public class GeneratorWorker {
         List<Worker> generatorWorker = new ArrayList<>();
         Random random = new Random();
 
-        File workerFemale = new File("src/Files/generatorFemale.txt");
-        File workerMale = new File("src/Files/generatorMale.txt");
-
-        File generatorWorkerFemale = new File("src/Files/workerFemale.txt");
-        File generatorWorkerMale = new File("src/Files/workerMale.txt");
-
-        FileReader fileReaderWorkerFemale = new FileReader(workerFemale);
-        FileReader fileReaderWorkerMale = new FileReader(workerMale);
+        FileReader fileReaderWorkerFemale = new FileReader((File) generatorWorker);
+        FileReader fileReaderWorkerMale = new FileReader("src/Files/generatorMale.txt");
 
         FileWriter fileWriterWorkerFemale = new FileWriter(generatorWorkerFemale);
         FileWriter fileWriterWorkerMale = new FileWriter(generatorWorkerMale);
@@ -44,7 +38,7 @@ for (int i = 0; i < 5000; i++){
     int maxSalary = random.nextInt(1100, 6000);
 
     String generatedFemale = workerFemales.get(random.nextInt(0, 100)) + " " + minSalary + " " + maxSalary + " " + GenderTypes.FEMALE;
-    bufferedWriterWorkerFemale.write(generatorWorkerFemale);
+    bufferedWriterWorkerFemale.write(String.valueOf(generatorWorkerFemale));
     bufferedWriterWorkerFemale.newLine();
     bufferedWriterWorkerFemale.flush();
 
