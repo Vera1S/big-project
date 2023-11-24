@@ -38,17 +38,19 @@ public class PeopleGenerator {
         System.out.println("---------");
         System.out.println(nameMales);
 
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 5000; i++) {
             int minSalary = random.nextInt(550, 1000);
             int maxSalary = random.nextInt(1100, 6000);
 
             String generatedFemale = nameFemales.get(random.nextInt(0, 100)) + " " + minSalary + " " + maxSalary + " " + GenderTypes.FEMALE;
             bufferedWriterNameFemale.write(generatedFemale);
             bufferedWriterNameFemale.newLine();
+            bufferedWriterNameFemale.flush();
 
-            String generatedMale = nameMales.get(random.nextInt(0, 100)) + " " + minSalary + " " + maxSalary + GenderTypes.MALE + " " + GenderTypes.MALE;
+            String generatedMale = nameMales.get(random.nextInt(0, 100)) + " " + minSalary + " " + maxSalary + " " + GenderTypes.MALE;
             bufferedWriterNameMale.write(generatedMale);
             bufferedWriterNameMale.newLine();
+            bufferedWriterNameMale.flush();
 
         }
     }

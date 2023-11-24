@@ -10,7 +10,7 @@ public class PensionFund {
 
     private String namePensionFund;
     public boolean isGos;
-    private String dateOfCreation;
+    private final String dateOfCreation;
     private List<Worker> persons;
 
     private Map<DayOfWeek, Boolean> workDays;
