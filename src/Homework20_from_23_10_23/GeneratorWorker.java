@@ -8,9 +8,6 @@ import java.util.Random;
 public class GeneratorWorker {
     public static void main(String[] args) throws IOException {
 
-        List<Worker> generatorWorker = new ArrayList<>();
-        Random random = new Random();
-
         String generatorFemale = "src/Files/generatorFemale.txt";
         String generatorMale = "src/Files/generatorMale.txt";
 
@@ -27,13 +24,10 @@ public class GeneratorWorker {
         List<String> workerMales = bufferedReaderWorkerMale.lines()
                 .toList();
 
-        System.out.println(workerFemales);
-        System.out.println();
-        System.out.println(workerMales);
-
         for (int i = 0; i < workerFemales.size(); i++){
-            String worker = workerFemales.get(i);
-
+            String workers = workerFemales.get(i);
+            List<Worker> generatorWorker = new ArrayList<>();
+            generatorWorker.add();
         }
     }
 
