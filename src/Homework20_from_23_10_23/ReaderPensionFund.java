@@ -14,9 +14,15 @@ public class ReaderPensionFund {
         BufferedReader bufferedReaderPenFund = new BufferedReader(fileReaderPensionFund);
 
         List<PensionFund> readerPensionFunds = bufferedReaderPenFund.lines()
-                .map(s -> new PensionFund(s))
+                .map(PensionFund::new)
                 .toList();
         System.out.println(readerPensionFunds);
+
+        for (int i = 0; i < readerPensionFunds.size(); i++) {
+            PensionFund pensFunds = readerPensionFunds.get(i);
+            System.out.println(pensFunds);
+
+        }
 
         List<PensionFund> readerGenerFund = new ArrayList<>();
     }
