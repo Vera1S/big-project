@@ -3,9 +3,8 @@ package Homework20_from_23_10_23;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
-public class GeneratorWorker {
+public class ReaderWorker {
     public static void main(String[] args) throws IOException {
 
         String generatorFemale = "src/Files/generatorFemale.txt";
