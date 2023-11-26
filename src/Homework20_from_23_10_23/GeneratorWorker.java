@@ -26,8 +26,14 @@ public class GeneratorWorker {
 
         for (int i = 0; i < workerFemales.size(); i++){
             String workers = workerFemales.get(i);
-            List<Worker> generatorWorker = new ArrayList<>();
-            generatorWorker.add();
+            //List<Worker> generatorWorker = bufferedReaderWorkerFemale.readLine()
+            System.out.println(workers);
+
+            for (int j = 0; j < workerMales.size(); j++) {
+                String maleWorkers = workerMales.get(i);
+                System.out.println(maleWorkers);
+
+            }
         }
     }
 
