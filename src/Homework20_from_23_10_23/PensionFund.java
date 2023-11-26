@@ -124,7 +124,16 @@ public class PensionFund {
         this.workDays = workDays;
     }
 
-
+    @Override
+    public String toString() {
+        return "PensionFund{" +
+                "namePensionFund='" + namePensionFund + '\'' +
+                ", isGos=" + isGos +
+                ", dateOfCreation='" + dateOfCreation + '\'' +
+                ", persons=" + persons +
+                ", workDays=" + workDays +
+                '}';
+    }
 }
 
 

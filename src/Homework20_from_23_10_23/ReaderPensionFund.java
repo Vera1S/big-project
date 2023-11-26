@@ -13,8 +13,10 @@ public class ReaderPensionFund {
         FileReader fileReaderPensionFund = new FileReader(readerPensionFund);
         BufferedReader bufferedReaderPenFund = new BufferedReader(fileReaderPensionFund);
 
-        List<String> readerPensionFunds = bufferedReaderPenFund.lines()
+        List<PensionFund> readerPensionFunds = bufferedReaderPenFund.lines()
+                .map(s -> new PensionFund(s))
                 .toList();
+        System.out.println(readerPensionFunds);
 
         List<PensionFund> readerGenerFund = new ArrayList<>();
     }
