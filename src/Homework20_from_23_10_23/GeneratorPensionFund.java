@@ -10,7 +10,7 @@ public class GeneratorPensionFund {
 
         File pensionFund = new File("src/Files/PensionFund.txt");
 
-        File generatorPensionFund = new File("src/Files/generatorPensionFund.txt");
+        File generatorPensionFund = new File("src/Files/generatorPensionFu.txt.txt");
 
         FileReader fileReaderForPensionFund = new FileReader(pensionFund);
         FileWriter fileWriterPensionFund = new FileWriter(generatorPensionFund);

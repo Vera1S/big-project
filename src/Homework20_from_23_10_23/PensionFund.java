@@ -10,7 +10,7 @@ public class PensionFund {
 
     private String namePensionFund;
     public boolean isGos;
-    private final String dateOfCreation;
+    private String dateOfCreation;
     private List<Worker> persons;
 
     private Map<DayOfWeek, Boolean> workDays;
@@ -23,10 +23,10 @@ public class PensionFund {
         this.workDays = new HashMap<>();
     }
     public PensionFund(String strPension){
-        String[] arrayPensionFund = strPension.split(" ");
+        String[] arrayPensionFund = strPension.split(", ");
         this.namePensionFund = arrayPensionFund[0];
         this.isGos = Boolean.parseBoolean(arrayPensionFund[1]);
-        this.dateOfCreation = arrayPensionFund[2];
+
 //        this.persons = arrayPensionFund[3];
     }
 
