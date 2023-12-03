@@ -5,10 +5,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
+import static java.util.stream.Collectors.toList;
+
 public class StreamObjectEighthPoint {
     public static void main(String[] args) {
         ReaderGeneratorPensionFund readerGeneratorPensionFund = new ReaderGeneratorPensionFund();
+
         List<PensionFund> moreOfFunds = new ArrayList<>();
+
         PensionFund mostOfAllDepositors = moreOfFunds.stream()
                 .filter(Objects::nonNull)
                 .max(Comparator.comparingInt(Fund -> Fund.getPersons().size()))
@@ -30,8 +34,13 @@ public class StreamObjectEighthPoint {
                 .toList();
         System.out.println(lozers.size());
 
+        List<Double> victimOfNonFunds = moreOfFunds.stream()
+                .filter(Objects::nonNull)
+                .map(pensionFund -> pensionFund.calculatePensionFor(getPersons()).stream())
+        .toList();
+        System.out.println(victimOfNonFunds);
+
+
 
     }
-
-
 }
