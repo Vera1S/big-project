@@ -18,7 +18,18 @@ public class StreamObjectEighthPoint {
         String nameOfThePerson = moreOfFunds.stream()
                 .filter(Objects::nonNull)
                         .max(Comparator.comparingDouble(Worker::getMaxSalary))
-                .map(pensionFund -> pensionFund.calculateMedianPension()
+                .map(pensionFund -> pensionFund.calculatePensionFor(Worker.getPercentOfPension())
+                        .toList();
+
+        System.out.println(nameOfThePerson);
+
+        List<Worker> lozers  = moreOfFunds.stream()
+                .filter(Objects::nonNull)
+                .filter(pensionFund -> pensionFund.isGos())
+                .filter(pensionFund -> pensionFund.getPersons().stream())
+                .toList();
+        System.out.println(lozers.size());
+
 
     }
 
