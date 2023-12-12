@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReaderGeneratorPensionFund {
-    public static void main(String[] args) throws FileNotFoundException {
+    public List<PensionFund> findPensionFund () throws FileNotFoundException {
         String readerPensionFund = "src/Files/generatorPensionFund.txt";
 
         FileReader fileReaderPensionFund = new FileReader(readerPensionFund);
@@ -16,14 +16,7 @@ public class ReaderGeneratorPensionFund {
         List<PensionFund> readerPensionFunds = bufferedReaderPenFund.lines()
                 .map(PensionFund::new)
                 .toList();
-        System.out.println(readerPensionFunds);
+        return readerPensionFunds;
 
-        for (int i = 0; i < readerPensionFunds.size(); i++) {
-            PensionFund pensFunds = readerPensionFunds.get(i);
-            System.out.println(pensFunds);
-
-        }
-
-        List<PensionFund> readerGenerFund = new ArrayList<>();
     }
 }
